@@ -1,37 +1,112 @@
 <!Doctype html>
 
 <html>
-  <head>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">    
-    <title>
-    About Me  
-    </title>
-  </head>
-  <body>
-    <header>
-      <img id="profile" src="img/profile-tiny.png" alt="A profile picture of Dan">
-      <h1>
-        About Me
-      </h1>
-    </header>
-    <main>
-      <h2>An Introduction</h2>
-      <article>
-        <p>As a <strong>Software Developer</strong> I strive to bring quality soft products, services and support to the software industry so that customers and end users alike have a smooth and painless experience while using them.<br><br>
-        When I began in the software industry, I started out as a game tester with Nintendo of America. Over the years I performed various rolls within the testing department and the experience taught me a lot about the development cycle with an emphasis on debugging software.  Though it was a great experience, deep down I wanted to be making software, not trying break it. <br><br>
-        With the goal of becoming a developer in mind I taught myself C#, a little HTML and a little CSS. I put those skills to work making games and tools for myself with the Unity Engine. Over the course of a total of four years, I'd made some progress and had a handful of various projects under my belt. I dabbled in <strong>programming</strong>, <strong>VR</strong>, <strong>3D modeling</strong>, <strong>rigging</strong>, <strong>animation</strong>, <strong>texturing</strong> and <strong>sound design</strong>.<br><br>
-        Slowly, these experiences revealed to me that though developing games was fun, the world of code was where I <em>really</em> wanted to be regardless of the project. So, I adjusted my path to match my passion and I enrolled in <strong>Code Fellows</strong>, a coding bootcamp. With class courses underway, I currently purse the dream of being a software developer working professionally in the software industry.</p>
-      </article>
-    </main>
-    
-    <footer>
-      <ul>
-        <li><a href="mailto:dawesome@danawesome.com?subject=I'd love to connect"> Contact Me</a></li>
-        <li><a href="https://www.danawesome.com">www.danawesome.com</a></li>
-        <li><a href="https://www.linkedin.com/in/daniel-awesome/"><img class="socialMedia" src="img/linkedin-icon.png" alt="A small linkedin icon"></a> <a href="https://twitter.com/DanAwesome101"><img class="socialMedia" src="img/twitter-icon.png" alt="A small twitter icon"></a></li>
+
+<head>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>
+    About Me
+  </title>
+</head>
+
+<body>
+  <header>
+    <img id="profile" src="img/profile-tiny.png" alt="A profile picture of Dan">
+    <h1>
+      About Me
+    </h1>
+  </header>
+  <main>
+    <aside>
+      <h2 id="experience">Experience</h2>
+      <ul id="job-title">
+        <li>Software Developer</li>
+        <ol class="job-data">
+          <li>Self Employed</li>
+          <li>Oct 2021 - Present · 10 mos</li>
+        </ol>
+        <li>Information Technology Administrator</li>
+        <ol class="job-data">
+          <li>AAA Heating & Air Conditioning</li>
+          <li>Oct 2018 - Oct 2021 · 3 yrs 1 mo</li>
+        </ol>
+        <li>Software Developer</li>
+        <ol class="job-data">
+          <li>Self Employed</li>
+          <li>Jan 2015 - Aug 2016 · 1 yr 8 mos</li>
+        </ol>
+        <li>Hardware Test Engineer</li>
+        <ol class="job-data">
+          <li>Big Fish Games</li>
+          <li>Sep 2011 - Dec 2012 · 1 yr 4 mos</li>
+        </ol>
+        <li>Visual Data Specialist (Google)</li>
+        <ol class="job-data">
+          <li>Aerotek</li>
+          <li>Aug 2010 - Sep 2011 · 1 yr 2 mos</li>
+        </ol>
+        <li>Product Testing Backup Coordinator</li>
+        <ol class="job-data">
+          <li>Nintendo</li>
+          <li>Feb 2008 - Jul 2010 · 2 yr 7 mos</li>
+        </ol>
+        <li>Product Tester (Nintendo)</li>
+        <ol class="job-data">
+          <li>Aerotek</li>
+          <li>Apr 1999 - Jan 2008 · 8 yrs 10 mos</li>
+        </ol>
       </ul>
-    </footer>
-    <script src="js/app.js"></script>
-  </body>
+    </aside>
+    <div id="main-body">
+      <article>
+        <h2 id="intro">An Introduction</h2>
+        <p>As a <strong>Software Developer</strong> I strive to bring quality soft products, services and support to the
+          software industry so that customers and end users alike have a smooth and painless experience while using
+          them.<br><br>
+          When I began in the software industry, I started out as a game tester with Nintendo of America. Over the years
+          I performed various rolls within the testing department and the experience taught me a lot about the
+          development cycle with an emphasis on debugging software. Though it was a great experience, deep down I wanted
+          to be making software, not trying break it. <br><br>
+          With the goal of becoming a developer in mind I taught myself C#, a little HTML and a little CSS. I put those
+          skills to work making games and tools for myself with the Unity Engine. Over the course of a total of four
+          years, I'd made some progress and had a handful of various projects under my belt. I dabbled in
+          <strong>programming</strong>, <strong>VR</strong>, <strong>3D modeling</strong>, <strong>rigging</strong>,
+          <strong>animation</strong>, <strong>texturing</strong> and <strong>sound design</strong>.<br><br>
+          Slowly, these experiences revealed to me that though developing games was fun, the world of code was where I
+          <em>really</em> wanted to be regardless of the project. So, I adjusted my path to match my passion and I
+          enrolled in <strong>Code Fellows</strong>, a coding bootcamp. With class courses underway, I currently purse
+          the dream of being a software developer working professionally in the software industry.</p>
+      </article>
+      <section>
+        <h2>Top Ten Favorite Video Games</h2>
+        <div id="top-ten-container">
+          <ol id="top-ten">
+            <li>Middle-earth: Shadow of Mordor</li>
+            <li>Earth Defense Force 5</li>
+            <li>Conan Exiles</li>
+            <li>Minecraft</li>
+            <li>Terraria</li>
+            <li>Valheim</li>
+            <li>Subnautica Series</li>
+            <li>No Man's Sky</li>
+            <li>Prototype 2</li>
+            <li>inFamous Series</li>
+          </ol>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <ul id="contact-info">
+      <li><a href="mailto:dawesome@danawesome.com?subject=I'd love to connect"> Contact Me</a></li>
+      <li><a href="https://www.danawesome.com">www.danawesome.com</a></li>
+      <li><a href="https://www.linkedin.com/in/daniel-awesome/"><img class="socialMedia" src="img/linkedin-icon.png"
+            alt="A small linkedin icon"></a> <a href="https://twitter.com/DanAwesome101"><img class="socialMedia"
+            src="img/twitter-icon.png" alt="A small twitter icon"></a></li>
+    </ul>
+  </footer>
+  <script src="js/app.js"></script>
+</body>
+
 </html>

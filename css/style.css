@@ -4,18 +4,21 @@ html{
 }
 
 header {
+  border-top:#5e4c5a solid 10px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  align-items: left;
 }
 
 #profile {
+  margin: 5px;
   border: #5e4c5a ridge 5px;
+  border-radius: 10%;
   width: 100px;
 }
 
 h1 {
+  margin-left: 5px;
   font-size: xx-large
 }
 
@@ -24,9 +27,36 @@ main {
   border-top: #5e4c5a solid 10px;
   border-bottom: #5e4c5a solid 10px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
+}
+
+aside{
+  background-color: #6bab90;
+  border-right: #5e4c5a solid 10px;
+}
+
+#experience{
+  margin-left: 5px;
+}
+
+#job-title{
+  padding: 25px;
+  list-style-type: disc;
+  font-size: larger;
+  font-weight:bold;
+}
+
+.job-data{
+  padding-left: 20px;
+  list-style-type: square;
+  justify-content: left;
+  align-items: left;
+  font-size: medium;
+  font-weight: lighter;
+}
+
+li {
+  padding-top: 4px;
 }
 
 article {
@@ -35,14 +65,14 @@ article {
   border-radius: 5%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  margin: 5px 10px 20px 10px;
+  margin: 20px 20px 20px 50px;
   width: 50vw;
 }
 
 h2 {
-  font-size: large;
+  font-size: x-large;
+  font-weight: bolder;
   margin-top: 5px;
 }
 
@@ -58,22 +88,33 @@ em {
   font-weight: light;
 }
 
+section{
+  background-color: #6bab90;
+  border: #5e4c5a solid 5px;
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50vw;
+  margin: 20px 20px 20px 50px;
+}
+
+#top-ten{
+  padding: 5px 0px 10px 0px;
+  display: flex;
+  flex-direction: column;
+  list-style-type: disc;
+}
+
 footer{
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
 }
 
-ul{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-li {
-  padding-top: 4px;
+#contact-info{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
 }
 
 .socialMedia{
