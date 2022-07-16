@@ -5,13 +5,13 @@ let userScore = 0;
 let questionsTotal = 7;
 let fruitGuessesTotal = 6;
 let numberGuessesTotal = 4;
-//The correctNumber variable randomizes the answer to question 6 and uses correctNumberMax as the max value for the question.  It is safe to just change correctNumberMax as the question the user see's and the randomized variable both pull from this value.
-let correctNumberMax = 38;
+//correctNumberMax and correctNumber randomize the answer and range for question 6.
+let correctNumberMax = Math.floor(Math.random() * 100) + 1;
 let correctNumber = Math.floor(Math.random() * correctNumberMax) + 1;
 let yesnoAnswers = ['y', 'n', 'yes', 'no'];
 let fruit = ['apple', 'pear', 'bananna', 'plum', 'mango'];
 let i = 0; //Used global scoped variable from main loop "i" to keep invalid entry's from advancing the main loop to the next question.
-let k = 0; //Used global scoped varible for use with `otherAnswers' array so we
+let k = 0; //Used global scoped varible for use with `otherAnswers' array so otherAnswers[2] could us it to display the correct fruit.
 let userGuessing;
 let resetQuestion = false;
 let questions = [
@@ -60,7 +60,7 @@ for (i; i <= questionsTotal; i++) {
 }
 
 // The final message displayed after the quiz has been completed.
-alert(`You scored ${userScore} points ${userName}. Thanks for taking my quiz. I had a blast making it. See you next time ${userName}.`);
+alert(`You scored ${userScore} points out of 7 ${userName}. Thanks for taking my quiz. I had a blast making it. See you next time ${userName}.`);
 
 // Asks the user questions from a prompt and pushes their answers forward to guessingGame(x, y);
 function askQuestion(questionNumber) {
